@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Node.js-Restfull-APIx</title>
+  </head>
+  <body>
+    <h1>這是我用來練習Node.js-Restfull-API的首頁</h1>
+    <button onclick="getStudents()">顯示所有學生資料</button>
+    <div class="result"></div>
+    <script>
+      function getStudents() {
+        // 使用 JavaScript 發送 GET 請求到 /students 路徑
+        fetch("/students/")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            // 在這裡處理回傳的學生資料
+            let result = document.querySelector(".result");
+            result.innerHTML = JSON.stringify(data);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      }
+    </script>
+  </body>
+</html>
