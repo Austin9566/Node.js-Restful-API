@@ -1,3 +1,19 @@
+db.students.find()
+db.students.insertMany([ { name: 'Austin', age: 23, major: 'cs', scholarship: { merit: 3000, other: 3000 } }, { name: 'Jenny', age: 23, major: 'Department of Money and Banking', scholarship: { merit: 5000, other: 2500 } }, { name: 'Vivian', age: 23, major: 'Play', scholarship: { merit: 1500, other: 3000 } }, { name: 'Jason', age: 21, major: 'sing', scholarship: { merit: 3500, other: 0 } }])
+db.students.find()
+db.students.deleteMany({ name: { $in: ["Austin", "Jenny", "Vivian", "Jason"] } })
+db.students.find()
+db.collectionName.deleteMany({ name: { $in: ["Austin", "Jenny", "Jason"] } })
+db.students.deleteMary({name:"Austin"},{name:"Jenny"},{name:"Jason"})
+db.studnets.remove({ $or: [ { _id: ObjectId("64a7e2346cc456fd0664fa7b") }, { _id: ObjectId("64b18167c8064f2b06202f67") }, { _id: ObjectId("64b18ce66c3faa60f01e4c2c") }] })
+db.students.find()
+db.studnets.remove({ $or: [ { _id: ObjectId("64a7e2346cc456fd0664fa7b") }, { _id: ObjectId("64b18167c8064f2b06202f67") }, { _id: ObjectId("64b18ce66c3faa60f01e4c2c") }] })
+db.students.find()
+db.collectionName.remove({ $or: [ { _id: ObjectId("64a7e2346cc456fd0664fa7b") }, { _id: ObjectId("64b18167c8064f2b06202f67") }, { _id: ObjectId("64b18ce66c3faa60f01e4c2c") }] })
+db.students.find()
+show collections
+use exampleDB
+show dbs
 db.students.find();
 use exampleDB
 show dbs
