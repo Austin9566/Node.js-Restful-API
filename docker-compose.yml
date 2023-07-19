@@ -12,10 +12,7 @@ services: # 定義多個服務的區塊開始。
 
     command: "node /home/app.js" # node執行 app.js 檔案。
 
-  mongodb: # 修改服務名稱為 "mongodb"
-    networks:
-      - nodejs-restful-api-network # 將服務連接到名為 "nodejs-restful-api-network" 的自定義網路。
-    
+  mongodb: # 修改服務名稱為 "mongodb
     image: mongo:latest
 
     ports:
