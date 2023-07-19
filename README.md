@@ -15,6 +15,7 @@ docker-compose up -d
 ```
 #### 2. 測試 Node.js Restful API 功能
 因為是透過 Docker 建立的 Node.js 開發環境，可以查看 Docker 是在哪個環境下安裝的，查看該主機的 IP 地址，接著使用 Postman 測試以下的 API URL。
+記得下方的 localhost 要改成正確的主機IP哦。
 * **Get**
   * 查詢所有學生資料：http://localhost:3000/students
   * 查詢特定學生資料：http://localhost:3000/students/_id
